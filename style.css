@@ -5,11 +5,8 @@ body {
   font-family: 'Noto Sans JP',sans-serif;
   color: #000000;
   background-color: #ffffff;
-  margin: auto;
-  width: 100%;
-  flex-wrap: wrap;
-  font-size: 18px;
-  text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* メイン画像 */
@@ -22,17 +19,12 @@ body {
 @media screen and (min-width: 768px) {
   
 
-body {
-  margin: 0 auto;
-  min-width: 768px;
-}
-
   /*ヘッダー全体  */
   .header-div {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 10px 0 10px;
+    justify-content: space-between;
+    margin: 20px auto;;
     max-width: 1200px;
   }
 
@@ -50,12 +42,13 @@ body {
     display: flex;
     font-weight: bold;
     margin: 20px;
+    text-decoration: none;
   }
 
     /* リンクの装飾設定 */
   #nav-menu > a {
     text-decoration: none; 
-    padding: 0 15px;
+    padding: 0 20px;
   }
   #nav-menu > a:link {
     color: #000000;
@@ -74,11 +67,14 @@ body {
   .main-div {
     max-width: 1200px;
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
   }
 
   /* menuの見出し */
   h2 {
     font-size: 34px;
+    text-align: center;
   }
 
   /* 写真と名前等の枠 */
@@ -149,9 +145,11 @@ body {
   }
 
   /* フッター */
-    .footer {
+    footer > p {
+      max-width: 1200px;
       padding: 30px;
-
+      text-align: center;
+      margin: 0 auto;
     }
 
 }
@@ -204,7 +202,16 @@ body {
   /* メニューの文字 */
   h2 {
     font-size: 34px;
+    text-align: center;
+    margin: 0 auto;
+    
   }
+
+    #about-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 
   /* 人物画像 */
   .about-img {
@@ -217,18 +224,37 @@ body {
   /* 名前 */
   .about-name > h3 {
     font-size: 24px;
+    text-align: center;
   }
 
   ul {
-    text-align: left;
     margin-bottom: 40px;
+    width: 80%;
   }
 
   /* Works */
 
   .works-div {
-    padding: 20px 0 60px 20px;
-    width: 80%;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sea > img {
+    width: 100%;
+  }
+
+  .mt > img {
+    width: 100%;
+  }
+
+  .city > img {
+    width: 100%;
+  }
+
+  footer > p {
+    text-align: center;
+    margin: 50px 0 20px 0;
   }
 
 }
